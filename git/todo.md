@@ -1,0 +1,2 @@
+- switch changes from current local branch to another local branch 
+- commit changes from current local branch to another remote branch
