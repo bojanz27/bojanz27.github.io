@@ -6,7 +6,7 @@ This is a personal reference of basic everyday git commands.
 
 ## Contents:
  - [git init](#git-init)
- - [git remote](#git-remote)
+ - [git remote add](#git-remote-add)
  - [git add](#git-add)
  - [git commit](#git-commit)
  - [git status](#git-status)
@@ -21,12 +21,12 @@ The newly created repo has a single empty branch named `master`.
 git init
 ```
 
-## git remote
+## git remote add
 
 Used to connect local repository to a remote repository
 
 ```bash
-git remote <nickname> <url>
+git remote add <nickname> <url>
 ```
 
 - _url_ is the URL of the remote repo, i.e. https://github.com/bojanz27/bojanz27.github.io.git
@@ -35,7 +35,7 @@ git remote <nickname> <url>
 So the full command is:
 
 ```bash
-git remote origin https://github.com/bojanz27/bojanz27.github.io.git
+git remote add origin https://github.com/bojanz27/bojanz27.github.io.git
 ```
 
 This merely creates a reference/link from a local to the remote repo. It does not automatically link local branches to the remote branches. The local branches must be linked to the remotes individually. This is done during `git push`(git push)[#git-push]
@@ -115,7 +115,7 @@ Step 1 - git init
 git init
 ``` 
 
-Ste 2 - connect remote named origin
+Step 2 - connect remote named origin
 
 ```bash
 git remote origin https://github.com/bojanz27/bojanz27.github.io.git
